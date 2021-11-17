@@ -1,0 +1,39 @@
+.labels {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.label {
+  border-radius: 3px;
+  padding: 4px 6px 3px 6px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 116%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  z-index: 1;
+
+  &--purple {
+    background: #8D58E3;
+  }
+
+  &--green {
+    background: #3BC5AD;
+  }
+
+  &--discount {
+    width: 65px;
+    background: #E95471;
+  }
+
+  &--yellow {
+    background: #FFAF00;
+  }
+
+  &--blue {
+    background: #3A9EFD;
+  }
+}

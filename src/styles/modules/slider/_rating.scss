@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+
+  &__reviews {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+  }
+}
+
+.zero {
+  color: #B6B7C4;
+}
+
+.big {
+  color: #202454;
+}

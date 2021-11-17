@@ -1,0 +1,18 @@
+.site-info {
+  margin-top: 4px;
+  margin-bottom: 67px;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114%;
+  color: #FFFFFF;
+  opacity: 0.4;
+
+  @media (max-width: 1000px){
+    margin-bottom: 30px;
+  }
+  &__text {
+    white-space: nowrap;
+  }
+
+}

@@ -1,0 +1,21 @@
+.new-price {
+  display: flex;
+  align-items: center;
+
+  &__update{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E95471;
+    border-radius: 20px;
+  }
+  &__cost {
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 120%;
+    color: #7B94B0;
+  }
+}

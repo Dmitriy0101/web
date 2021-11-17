@@ -1,0 +1,42 @@
+.title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 118%;
+  @media (max-width: 1150px) {
+    font-size: 34px;
+  }
+}
+
+.title__theme--green {
+  color: #275420;
+}
+
+.title__theme--black {
+  color: #202454;
+
+  @media (max-width: 680px) {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  @media (max-width: 380px) {
+    font-size: 26px;
+  }
+}
+
+.title__black {
+  color: #202454;
+  margin-bottom: 24px;
+
+  &--big {
+    font-size: 40px;
+  }
+
+  &--small {
+    font-size: 24px;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 20px;
+  }
+}

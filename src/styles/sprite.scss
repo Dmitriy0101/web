@@ -1,0 +1,97 @@
+.region__icon {
+  fill: #7B94B0;
+
+  &:hover {
+    fill: #202454;
+  }
+}
+
+.wish {
+  fill: none;
+  stroke: #202454;
+  stroke-width: 2px;
+
+  &:hover {
+    stroke: #3A9EFD;
+  }
+
+  &__blue {
+    stroke: #3A9EFD;
+  }
+
+  @media (max-width: 450px) {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.icon-mobile {
+  fill: #33485D;
+}
+
+.star {
+  fill: #E77E42;
+  margin-right: 2px;
+}
+
+.bad-star {
+  fill: #E0E0E0;
+  margin-right: 2px;
+}
+
+.arr-down {
+  fill: none;
+  stroke: #7B94B0;
+
+  &:hover {
+    stroke: #202454;
+  }
+}
+
+.arr-up {
+  fill: none;
+  stroke: #fff;
+
+  &:hover {
+    stroke: #E77E42;
+  }
+}
+
+.arr-right {
+  fill: none;
+  stroke: #fff;
+}
+
+.update {
+  fill: #fff;
+}
+
+.video {
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  fill: black;
+}
+
+
+.social-networks {
+  fill: #FFFFFF;
+
+  &:hover {
+    fill: #E77E42;
+  }
+}
+
+.feedback__icon {
+  fill: #E77E42;
+}
+
+
+.telephone {
+  fill: #33485D;
+}
+
+
+
+
+
+

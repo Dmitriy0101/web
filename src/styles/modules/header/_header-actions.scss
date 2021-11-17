@@ -1,0 +1,17 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+
+  & button {
+    padding: 4px;
+  }
+
+  & button:nth-child {
+    margin-right: 0;
+  }
+  @media (max-width: 450px){
+    margin-right: 6px;
+  }
+}
+

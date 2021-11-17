@@ -1,0 +1,32 @@
+.lang {
+  display: flex;
+
+  &__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 116%;
+    padding: 3px;
+    margin-right: 4px;
+    color: #7B94B0;
+
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      @media (min-width: 992px) {
+        background: #F4F5F8;
+        border-radius: 3px;
+        color: #202454;
+      }
+    }
+  }
+
+  &__link--active {
+    background: #F4F5F8;
+    border-radius: 3px;
+    color: #202454;
+  }
+}

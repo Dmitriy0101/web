@@ -1,0 +1,31 @@
+.footer-body {
+  background-color: #245420;
+  &__block {
+    padding-top: 56px;
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 1000px){
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  }
+  &__block-site {
+    padding-right: 157px;
+
+    @media (max-width: 1000px){
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 0;
+    }
+  }
+  &__block-info {
+    width: 100%;
+  }
+}
+@media (max-width: 425px){
+  .logo--footer {
+    margin-left: 0;
+  }
+}

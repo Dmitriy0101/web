@@ -1,0 +1,29 @@
+.blog-catalog {
+  @media (max-width: 680px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%;
+    color: #7B94B0;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #202454;
+    }
+
+    @media (max-width: 680px) {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+}

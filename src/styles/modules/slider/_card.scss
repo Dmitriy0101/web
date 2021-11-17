@@ -1,0 +1,43 @@
+.card {
+  width: 240px;
+
+  &__top {
+    position: relative;
+    height: 258px;
+    width: 258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    margin-bottom: 17px;
+  }
+
+  &__image {
+
+  }
+
+  &__img {
+    object-fit: scale-down;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__info {
+    width: 260px;
+  }
+
+  &__info-title {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 114%;
+    color: #202454;
+    height: 46px;
+    overflow: hidden;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.logotip {
+  z-index: 5;
+}
+
+.scroll-up {
+  display: flex;
+  align-items: self-start;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.scroll-up__txt {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-right: 16px;
+  margin-top: 15px;
+
+  @media (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.scroll-up__button {
+  margin-bottom: 10px;
+}
+
+

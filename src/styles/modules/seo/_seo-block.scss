@@ -1,0 +1,10 @@
+.seo-block {
+
+  &__item {
+    padding-bottom: 32px;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}

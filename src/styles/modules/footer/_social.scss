@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+
+  @media (max-width: 1000px){
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.social-link {
+  margin-right: 14px;
+
+  &:hover .social-networks {
+    fill: #E77E42;
+  }
+}

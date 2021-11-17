@@ -1,0 +1,41 @@
+.footer-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 132px;
+  height: 180px;
+  background-color: #9AC499;
+
+  @media (max-width: 769px) {
+    margin-top: 90px;
+  }
+
+  &__img {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -76px;
+  }
+
+  &__image {
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 506px;
+    margin-bottom: 12px;
+
+    @media (max-width: 450px){
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

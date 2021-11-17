@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap');
+@import '~normalize.css';
+
+
+@import 'defolt';
+@import 'sprite';
+
+// <------ BASA START ------>
+@import 'modules/basa/button';
+@import 'modules/basa/circle';
+@import 'modules/basa/label';
+@import 'modules/basa/scroll-up';
+@import 'modules/basa/tittle';
+// <------ BASA END ------>
+
+
+// <------ HEADER START ------>
+@import 'modules/header/header';
+@import 'modules/header/header-menu';
+@import 'modules/header/region';
+@import 'modules/header/top-left';
+@import 'modules/header/top-right';
+@import 'modules/header/dropdown-phones';
+@import 'modules/header/search';
+@import 'modules/header/lang';
+@import 'modules/header/bottom-left';
+@import 'modules/header/catalog';
+@import 'modules/header/bottom-right';
+@import 'modules/header/header-actions';
+@import 'modules/header/shopping-card';
+// <------ HEADER END ------>
+
+
+// <------ MOBILE-MENU START ------>
+@import 'modules/mobile-menu/menu-mobile';
+@import 'modules/mobile-menu/menu-button';
+@import 'modules/mobile-menu/mobile-nav';
+// <------ MOBILE-MENU END ------>
+
+
+// <------ SLIDER START ------>
+@import 'modules/slider/best';
+@import 'modules/slider/best-deals';
+@import 'modules/slider/slider';
+@import 'modules/slider/card';
+@import 'modules/slider/new-price';
+@import 'modules/slider/rating';
+@import 'modules/slider/trade';
+@import 'modules/slider/old-price';
+// <------ SLIDER END ------>
+
+// <------ BLOG START ------>
+@import 'modules/blog/block-blog';
+@import 'modules/blog/block-search';
+@import 'modules/blog/blog';
+@import 'modules/blog/blog-card';
+@import 'modules/blog/blog-catalog';
+@import 'modules/blog/blog-calendar';
+@import 'modules/blog/link-blog';
+// <------ BLOG END ------>
+
+// <------ BENEFIT START ------>
+@import 'modules/benefit/benefit';
+@import 'modules/benefit/benefit-block';
+// <------ BENEFIT END ------>
+
+// <------ SEO START ------>
+@import 'modules/seo/seo';
+@import 'modules/seo/seo-block';
+@import 'modules/seo/seo-short__toggle';
+// <------ SEO END ------>
+
+// <------ FOOTER START ------>
+@import 'modules/footer/about';
+@import 'modules/footer/block-info';
+@import 'modules/footer/feedback';
+@import 'modules/footer/footer-about';
+@import 'modules/footer/footer-body';
+@import 'modules/footer/footer-line';
+@import 'modules/footer/footer-social';
+@import 'modules/footer/payment';
+@import 'modules/footer/registration';
+@import 'modules/footer/site-info';
+@import 'modules/footer/social';
+// <------ FOOTER END ------>

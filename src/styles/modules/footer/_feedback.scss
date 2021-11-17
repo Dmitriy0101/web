@@ -1,0 +1,41 @@
+.feedback {
+  display: flex;
+  width: 66.67%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__item {
+    padding-right: 20px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .feedback__text {
+      text-decoration: underline;
+    }
+
+    &:hover .feedback__icon {
+      stroke: #000;
+    }
+  }
+
+  &__text {
+    padding-left: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 118%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+}

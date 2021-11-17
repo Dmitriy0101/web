@@ -1,0 +1,30 @@
+.old-price {
+  display: flex;
+  align-items: flex-end;
+
+  &__discount {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    color: #7B94B0;
+    padding-right: 4px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 45%;
+      top: 55%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      border-bottom: 1px solid #7B94B0;
+    }
+  }
+
+  &__cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #202454;
+  }
+}

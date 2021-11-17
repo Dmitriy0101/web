@@ -1,0 +1,78 @@
+.button {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (max-width: 450px) {
+    padding: 10px 20px 10px 20px;
+  }
+
+  &__text {
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
+  }
+
+  &:hover .button__text {
+    color: #202454;
+  }
+
+  &:hover .button__icon {
+    stroke: black;
+  }
+
+  &__theme--basket {
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(84, 143, 199, 0.2);
+    border-radius: 100%;
+
+    &:hover {
+      background-color: #E95471;
+    }
+
+    &:hover .wish__blue {
+      stroke: #FFFFFF;
+    }
+  }
+
+  &__toggle {
+    fill: none;
+    stroke: #7B94B0;
+    cursor: pointer;
+
+    &:hover {
+      stroke: #202454;
+    }
+  }
+}
+
+.button__theme--orange {
+  border-radius: 3px;
+  padding: 15px 32px 15px 32px;
+  background: #E77E42;
+  border: 1px solid #E77E42;
+}
+
+
+.button-video {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (max-width: 769px) {
+    top: 32%;
+    left: 35%;
+  }
+}

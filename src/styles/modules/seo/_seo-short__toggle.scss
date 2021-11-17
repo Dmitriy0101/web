@@ -1,0 +1,14 @@
+.seo-short__toggle {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 116%;
+  color: #E77E42;
+  border-bottom: 1px dashed #E77E42;
+  padding: 0;
+
+  &:hover {
+    color: #202454;
+    border-bottom: 1px dashed #202454;
+  }
+}

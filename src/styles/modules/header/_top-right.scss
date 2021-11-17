@@ -1,0 +1,12 @@
+.top-right {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-right: 46px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webpack</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-menu">
+        <div class="header-menu__top">
+            <div class="header-menu__top-left">
+                <div class="top-left">
+                    <div class="top-left__item">
+                        <div class="region">
+                            <button class="region__button">
+                                <svg class="region__icon" width="12" height="14">
+                                    <use xlink:href="dist/icons.svg#region"></use>
+                                </svg>
+                            </button>
+                            <div class="region__name">Херсон</div>
+                        </div>
+                    </div>
+                    <div class="top-left__item">
+                        <a href="#" class="top-left__item-link">Магазины</a>
+                        <a href="#" class="top-left__item-link">Блог</a>
+                        <a href="#" class="top-left__item-link">Покупателям</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu__top-right">
+                <div class="top-right">
+                    <div class="top-right__item">
+                        <div class="dropdown">
+                            <div class="dropdown-phones__text">Консультация:</div>
+                            <div class="dropdown-phones">
+                                <div class="dropdown-phones__header">
+                                    <a class="dropdown-phones__number" href="tel:0444903100">(044) 490 31 00</a>
+                                    <div class="dropdown-phones__toggle">
+                                        <button class="button button--theme-number">
+                                            <svg class="button__toggle" width="12" height="14">
+                                                <use xlink:href="dist/icons.svg#arr-down"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-phones__menu">
+                                        <a class="dropdown-phones__number" href="tel:0444903100">(044) 490 31 00</a>
+                                        <a class="dropdown-phones__number" href="tel:0444903100">(044) 490 31 00</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-right__item">
+                        <div class="lang">
+                            <a href="#" class="lang__link">УКР</a>
+                            <a class="lang__link lang__link--active">РУС</a>
+                            <a href="#" class="lang__link">ENG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu__bottom">
+            <div class="header-menu__bottom-left">
+                <div class="bottom-left">
+                    <a href="#" class="logotip">
+                        <svg class="logo" width="117" height="45">
+                            <use xlink:href="dist/icons.svg#wezom_logo"></use>
+                        </svg>
+                    </a>
+                    <nav class="catalog">
+                        <a href="#" class="catalog__item">Товары по питомцам</a>
+                        <a href="#" class="catalog__item">Бренды</a>
+                        <a href="#" class="catalog__item">Ветаптека</a>
+                        <a href="#" class="catalog__item">Найди друга</a>
+                        <a href="#" class="catalog__item">Ветклиники</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-menu__bottom-right">
+                <div class="bottom-right">
+                    <button class="search" id="open">
+                        <svg class="wish" width="26" height="26">
+                            <use xlink:href="dist/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <div class="search__block" id="form">
+                        <form class="search__form" action="#" method="post">
+                            <input class="search__text" type="text" value="" placeholder="Поиск"/>
+                        </form>
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="user">
+                            <svg class="wish" width="22" height="26">
+                                <use xlink:href="dist/icons.svg#user"></use>
+                            </svg>
+                        </button>
+                        <button class="favorite">
+                            <svg class="wish" width="27" height="25">
+                                <use xlink:href="dist/icons.svg#fav"></use>
+                            </svg>
+                        </button>
+                        <button class="shopping-card">
+                            <div class="shopping-card__item">
+                                <svg class="shopping-card__icon wish" width="32" height="32">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                                <div class="shopping-card__count">0</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="menu-button is-open" data-menu-button>
+        <svg class="icon" width="30" height="30" aria-label="переключение мобильного меню">
+            <use class="icon-menu" href='dist/icons.svg#menu'></use>
+            <use class="icon-exit" href='dist/icons.svg#exit'></use>
+        </svg>
+    </button>
+    <div class="menu-mobile" data-menu>
+        <div class="menu-mobile__content" data-menu-content>
+            <div class="menu-mobile__header">
+                <button class="region__button">
+                    <svg class="region__icon" width="12" height="14">
+                        <use xlink:href="dist/icons.svg#region"></use>
+                    </svg>
+                </button>
+                <div class="region__name">Херсон</div>
+            </div>
+            <div class="menu-mobile__body">
+                <div class="menu-mobile__lang ">
+                    <div class="lang">
+                        <a href="#" class="lang__link">УКР</a>
+                        <a class="lang__link lang__link--active">РУС</a>
+                        <a href="#" class="lang__link">ENG</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__catalog">
+                    <div class="menu-mobile__title">Каталог</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Товары по питомцам</a>
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Бренды</a>
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Магазины</a>
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Ветаптека</a>
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Найди друга</a>
+                        <a href="#" class="menu-mobile__link mobile-nav__link">Ветклиники</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__company">
+                    <div class="menu-mobile__title">Компания</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">О компании</a>
+                        <a href="#" class="menu-mobile__link">Адреса магазинов «ZooBonus»</a>
+                        <a href="#" class="menu-mobile__link">Вакансии</a>
+                        <a href="#" class="menu-mobile__link">Благотворительность</a>
+                        <a href="#" class="menu-mobile__link">Контакты</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__customers">
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Доставка и оплата</a>
+                        <a href="#" class="menu-mobile__link">FAQ</a>
+                        <a href="#" class="menu-mobile__link">Подарочные сертификаты</a>
+                        <a href="#" class="menu-mobile__link">Акции</a>
+                        <a href="#" class="menu-mobile__link">Породы животных</a>
+                        <a href="#" class="menu-mobile__link">Дисконтная программа</a>
+                        <a href="#" class="menu-mobile__link">Блог</a>
+                        <a href="#" class="menu-mobile__link">Фотогалерея</a>
+                        <a href="#" class="menu-mobile__link">Покупателям</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__site">
+                    <a href="#" class="menu-mobile__link">Условия использования сайта</a>
+                    <a href="#" class="menu-mobile__link">Защита персональных данных</a>
+                    <a href="#" class="menu-mobile__link">Карта сайта</a>
+                </div>
+                <div class="menu-mobile__help">
+                    <div class="menu-mobile__title">Контакты</div>
+                    <div class="menu-mobile__item">
+                        <a href="tel:0444903100" class="menu-mobile__list-item">
+                            <svg class="icon-mobile" width="20" height="20">
+                                <use href="dist/icons.svg#telephone"></use>
+                            </svg>
+                            <div class="menu-mobile__list-text">(044) 490 31 00</div>
+                        </a>
+                        <a href="tel:0444903100" class="menu-mobile__list-item">
+                            <svg class="icon-mobile" width="20" height="20">
+                                <use href="dist/icons.svg#telephone"></use>
+                            </svg>
+                            <div class="menu-mobile__list-text">(044) 490 31 00</div>
+                        </a>
+                        <a href="tel:0444903100" class="menu-mobile__list-item">
+                            <svg class="icon-mobile" width="20" height="20">
+                                <use href="dist/icons.svg#telephone"></use>
+                            </svg>
+                            <div class="menu-mobile__list-text">(044) 490 31 00</div>
+                        </a>
+                        <div class="menu-mobile__list-item">
+                            <svg class="icon-mobile" width="20" height="20">
+                                <use href="dist/icons.svg#message"></use>
+                            </svg>
+                            <a href="" class="menu-mobile__list-text">info@wezom.com.ua</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="menu-mobile__close" data-menu-close data-menu-button>
+                <svg class="menu-mobile__icon icon" width="16" height="16"
+                     aria-label="переключение мобильного меню">
+                    <use href='dist/icons.svg#exit'></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</header>
+<main>
+    <div class="block-slider">
+        <div class="container container--medium">
+            <div class="best">
+                <div class="best__title">
+                    Лучшие предложения недели
+                </div>
+                <div class="best-deals">
+                    <a href="#" class="best-deals__link best-deals__link--active">Собакам</a>
+                    <a href="#" class="best-deals__link">Кошкам</a>
+                    <a href="#" class="best-deals__link">Птицам</a>
+                    <a href="#" class="best-deals__link">Грызунам</a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod2.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                            <div class="label label--discount">Скидка -5%</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм
+                            с
+                            курицей, 4 кг
+                        </a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">1 550,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">1 700,22</div>
+                                        <div class="old-price__cost">1 600,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod1.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--discount">Скидка -5%</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для
+                            собак
+                            малых
+                            пород
+                        </a>
+                        <div class="rating">
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews big">(12)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">от 198,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">от 260,22</div>
+                                        <div class="old-price__cost">от 206,71 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod3.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--green">Новинка</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">PetKind Beef Tripe Formula Беззерновые консервы для собак с
+                            говядиной, 500
+                            мл
+                        </a>
+                        <div class="rating">
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews big">(65)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">Автозаказ</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__cost">1 600,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod4.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                            <div class="label label--discount">Скидка -5%</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Scalibor (Скалибор) ошейник 48 см</a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">520,00 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">640,22</div>
+                                        <div class="old-price__cost">560,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod5.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум
+                            корм
+                            для
+                            щенков
+                            мини и малых пород, 2 кг
+                        </a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">1 550,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__cost">1 600,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod1.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--discount">Скидка -5%</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для
+                            собак
+                            малых
+                            пород
+                        </a>
+                        <div class="rating">
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews big">(12)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">от 198,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">от 260,22</div>
+                                        <div class="old-price__cost">от 206,71 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod2.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                            <div class="label label--discount">Скидка -5%</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм
+                            с
+                            курицей, 4 кг
+                        </a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">1 550,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">1 700,22</div>
+                                        <div class="old-price__cost">1 600,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod5.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум
+                            корм
+                            для
+                            щенков
+                            мини и малых пород, 2 кг
+                        </a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">1 550,22 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__cost">1 600,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <a href="#" class="card__image">
+                            <img class="card__img" src="img/product/prod4.png" alt="">
+                        </a>
+                        <div class="labels">
+                            <div class="label label--purple">ТОП продаж</div>
+                            <div class="label label--discount">Скидка -5%</div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <a href="#" class="card__info-title">Scalibor (Скалибор) ошейник 48 см</a>
+                        <div class="rating">
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <svg class="bad-star" width="14" height="14">
+                                <use xlink:href="dist/icons.svg#star"></use>
+                            </svg>
+                            <span class="rating__reviews zero">(0)</span>
+                        </div>
+                        <div class="trade">
+                            <div class="trade-body">
+                                <div class="trade-body__new-price">
+                                    <div class="new-price">
+                                        <a href="#" class="new-price__update">
+                                            <svg class="update" width="15" height="15">
+                                                <use xlink:href="dist/icons.svg#update"></use>
+                                            </svg>
+                                        </a>
+                                        <span class="new-price__cost">520,00 ₴</span>
+                                    </div>
+                                </div>
+                                <div class="trade-body__old-price">
+                                    <div class="old-price">
+                                        <div class="old-price__discount">640,22</div>
+                                        <div class="old-price__cost">560,22 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button__theme--basket">
+                                <svg class="wish wish__blue" width="21" height="20">
+                                    <use xlink:href="dist/icons.svg#basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container container--medium">
+            <div class="blog">
+                <div class="block-search">
+                    <div class="block-search__body">
+                        <div class="block-search__title">
+                            Объявления о продаже
+                        </div>
+                        <div class="block-search__icon">
+                            <img src="img/search-blog/lapka.svg" alt="">
+                        </div>
+                        <div class="title title__theme--green">Найди друга</div>
+                        <div class="block-search__info">Ищете питомца? Посмотрите сотни объявлений от проверенных
+                            разводителей.
+                        </div>
+                        <div class="block-search__img">
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/1.png" alt="">
+                            </a>
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/2.png" alt="">
+                            </a>
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/3.png" alt="">
+                            </a>
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/4.png" alt="">
+                            </a>
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/5.png" alt="">
+                            </a>
+                            <a class="block-search__image" href="#">
+                                <img src="img/search-blog/6.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="button button__theme--orange">
+                            <div class="button__text">Все объявления</div>
+                            <svg class="button__icon arr-right" width="12" height="12">
+                                <use xlink:href="dist/icons.svg#arr-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-blog">
+                    <div class="title title__theme--black">Полезные материалы</div>
+                    <div class="block-blog__info">
+                        <div class="blog-catalog">
+                            <a href="#" class="blog-catalog__item">Новости</a>
+                            <a href="#" class="blog-catalog__item">Полезные советы</a>
+                            <a href="#" class="blog-catalog__item">Видео</a>
+                            <a href="#" class="blog-catalog__item">Обзоры товаров</a>
+                            <a href="#" class="blog-catalog__item">Лайфхаки</a>
+                        </div>
+                        <a href="#" class="link-blog">
+                            <div class="link-blog__button">
+                            <span class="link-blog__text">
+                             Перейти в блог
+                            </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="block-blog__card">
+                        <div class="blog-card">
+                            <div class="blog-card__item">
+                                <div class="blog-card__block">
+                                    <div class="blog-card__itm">
+                                        <a href="#" class="blog-card__button">
+                                            <img class="blog-card__image" src="img/blog/1.png" alt="">
+                                        </a>
+                                        <div class="labels">
+                                            <div class="label label--purple">Полезные советы</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-card__info">
+                                    <div class="blog-calendar">
+                                        <div class="blog-calendar__date">22</div>
+                                        <div class="blog-calendar__month">сент</div>
+                                    </div>
+                                    <a href="#" class="blog-card__text">Как выбрать корм для питомца. Советы
+                                        профессионалов.
+                                        Выбираем
+                                        корм для котов 7+</a>
+                                </div>
+                            </div>
+                            <div class="blog-card__item">
+                                <div class="blog-card__block">
+                                    <div class="blog-card__itm">
+                                        <a href="#" class="blog-card__button">
+                                            <img class="blog-card__image" src="img/blog/2.png" alt="">
+                                        </a>
+                                        <div class="labels">
+                                            <div class="label label--yellow">Лайфхаки</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-card__info">
+                                    <div class="blog-calendar">
+                                        <div class="blog-calendar__date">19</div>
+                                        <div class="blog-calendar__month">сент</div>
+                                    </div>
+                                    <a href="#" class="blog-card__text">Как научить собаку команде "принеси тапочки" в
+                                        домашних условиях</a>
+                                </div>
+                            </div>
+                            <div class="blog-card__item">
+                                <div class="blog-card__block">
+                                    <div class="blog-card__itm">
+                                        <a href="#" class="blog-card__button">
+                                            <img class="blog-card__image" src="img/blog/3.png" alt="">
+                                        </a>
+                                        <div class="labels">
+                                            <div class="label label--green">Видео</div>
+                                        </div>
+                                        <button class="button-video">
+                                            <svg class="video" width="64" height="64">
+                                                <use xlink:href="dist/icons.svg#video"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="blog-card__info">
+                                    <div class="blog-calendar">
+                                        <div class="blog-calendar__date">14</div>
+                                        <div class="blog-calendar__month">сент</div>
+                                    </div>
+                                    <a href="#" class="blog-card__text">Обзор товаров. Выбираем лучшую когтеточку для
+                                        вашего
+                                        кота.</a>
+                                </div>
+                            </div>
+                            <div class="blog-card__item">
+                                <div class="blog-card__block">
+                                    <div class="blog-card__itm">
+                                        <a href="#" class="blog-card__button">
+                                            <img class="blog-card__image" src="img/blog/4.png" alt="">
+                                        </a>
+                                        <div class="labels">
+                                            <div class="label label--blue">Обзоры товаров</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-card__info">
+                                    <div class="blog-calendar">
+                                        <div class="blog-calendar__date">9</div>
+                                        <div class="blog-calendar__month">сент</div>
+                                    </div>
+                                    <a href="#" class="blog-card__text">Игрушка для собак Trixie Мяч светящийся с
+                                        шипами</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="benefit">
+        <div class="container container--medium">
+            <div class="benefit-block">
+                <div class="container container--small">
+                    <div class="benefit-block__card">
+                        <div class="benefit__card">
+                            <div class="circle circle--white">
+                                <svg class="delivery" width="44" height="32">
+                                    <use xlink:href="dist/icons.svg#delivery"></use>
+                                </svg>
+                            </div>
+                            <div class="benefit__text">Бесплатная доставка при заказе от 300 грн</div>
+                        </div>
+                        <div class="benefit__card">
+                            <div class="circle circle--white">
+                                <svg class="present" width="30" height="32">
+                                    <use xlink:href="dist/icons.svg#present"></use>
+                                </svg>
+                            </div>
+                            <div class="benefit__text">Акции и скидки среди 2400 товаров</div>
+                        </div>
+                        <div class="benefit__card">
+                            <div class="circle circle--white">
+                                <svg class="many-shops" width="32" height="32">
+                                    <use xlink:href="dist/icons.svg#many-shops"></use>
+                                </svg>
+                            </div>
+                            <div class="benefit__text">Более 100 магазинов по всей Украине</div>
+                        </div>
+                        <div class="benefit__card">
+                            <div class="circle circle--white">
+                                <svg class="discount" width="40" height="26">
+                                    <use xlink:href="dist/icons.svg#discount"></use>
+                                </svg>
+                            </div>
+                            <div class="benefit__text">Дисконтная программа ZooBonus.ua</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seo">
+        <div class="container container--seo">
+            <div class="seo-block">
+                <div class="seo-block__item">
+                    <div class="title title__black title__black--big">Зоомагазин для домашних питомцев</div>
+                    <div class="seo__information">Любящие владельцы собак и кошек всегда хотят порадовать своих любимцев
+                        новыми игрушками, приобрести качественную амуницию, обеспечить животному полноценное питание и
+                        отдых, заботятся о его здоровье. Зоомагазин — это любимое место для всех любителей животных.
+                    </div>
+                </div>
+                <div class="seo-block__item">
+                    <div class="title title__black title__black--small">Каким должен быть хороший магазин товаров для
+                        животных
+                    </div>
+                    <div class="seo__information seo__information--short ">Многие владельцы животных часами
+                        просматривают адреса зоомагазинов в интернете, читают отзывы. Далеко не каждый зоомагазин в
+                        Киеве и других городах соответствует критериям, важным для покупателя:
+                    </div>
+                    <button class="seo-short__toggle">Показать все</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-line">
+        <div class="footer-line__img">
+            <div class="footer-line__image">
+                <img src="img/dog.png" alt="">
+            </div>
+            <div class="footer-line__image">
+                <img src="img/cat.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer-line__info">
+            <div class="footer-line__text title title__black title__black--small">Акции, скидки и специальные предложения для
+                зарегистрированных пользователей
+            </div>
+            <button class="button button__theme--orange">
+                <div class="button__text">зарегистрироваться</div>
+            </button>
+        </div>
+    </div>
+    <div class="footer-body">
+        <div class="container container--medium">
+            <div class="footer-body__block">
+                <div class="footer-body__block-site">
+                    <a href="#" class="logotip">
+                        <svg class="logo--footer" width="117" height="45">
+                            <use xlink:href="dist/icons.svg#wezom_logo"></use>
+                        </svg>
+                    </a>
+                    <div class="site-info">© 2020 Интернет-магазин</div>
+                    <div class="footer-about__list">
+                        <a class="about__link-item site-info__text" href="#">Условия использования сайта</a>
+                        <a class="about__link-item site-info__text" href="#">Защита персональных данных</a>
+                        <a class="about__link-item site-info__text" href="#">Карта сайта</a>
+                    </div>
+                </div>
+                <div class="footer-body__block-info">
+                    <div class="block-info">
+                        <div class="block-info__about">
+                            <div class="footer-social">
+                                <div class="social">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-link circle">
+                                        <svg class="social-networks" width="12" height="24">
+                                            <use xlink:href="dist/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-link circle">
+                                        <svg class="social-networks" width="24" height="24">
+                                            <use xlink:href="dist/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.viber.com/" target="_blank" class="social-link circle">
+                                        <svg class="social-networks" width="22" height="24">
+                                            <use xlink:href="dist/icons.svg#viber"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="feedback">
+                                    <div class="feedback__item">
+                                        <button class="feedback__button">
+                                            <svg class="feedback__icon" width="33" height="33">
+                                                <use xlink:href="dist/icons.svg#chat"></use>
+                                            </svg>
+                                            <span class="feedback__text">Чат онлайн</span>
+                                        </button>
+                                    </div>
+                                    <div class="feedback__item">
+                                        <button class="feedback__button">
+                                            <svg class="feedback__icon" width="33" height="33">
+                                                <use xlink:href="dist/icons.svg#message"></use>
+                                            </svg>
+                                            <span class="feedback__text">Написать нам</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-about">
+                                <div class="footer-about__item">
+                                    <div class="footer-about__title">Компания</div>
+                                    <div class="footer-about__list">
+                                        <a class="about__link-item" href="#">О компании</a>
+                                        <a class="about__link-item" href="#">Адреса магазинов «ZooBonus»</a>
+                                        <a class="about__link-item" href="#">Вакансии</a>
+                                        <a class="about__link-item" href="#">Благотворительность</a>
+                                        <a class="about__link-item" href="#">Контакты</a>
+                                    </div>
+                                </div>
+                                <div class="footer-about__item">
+                                    <div class="footer-about__title">Покупателям</div>
+                                    <div class="footer-about__list">
+                                        <a class="about__link-item" href="#">Доставка и оплата</a>
+                                        <a class="about__link-item" href="#">FAQ</a>
+                                        <a class="about__link-item" href="#">Подарочные сертификаты</a>
+                                        <a class="about__link-item" href="#">Акции </a>
+                                        <a class="about__link-item" href="#">Породы животных</a>
+                                        <a class="about__link-item" href="#">Дисконтная программа</a>
+                                        <a class="about__link-item" href="#">Блог</a>
+                                        <a class="about__link-item" href="#">Фотогалерея</a>
+                                    </div>
+                                </div>
+                                <div class="footer-about__item">
+                                    <div class="footer-about__title">Контакты</div>
+                                    <div class="footer-about__list">
+                                        <div class="about__list-info">Информационная служба:</div>
+                                        <a class="about__list-tel" href="tel:0444903100">(044) 490 31 00</a>
+                                        <div class="about__list-info--day">Ежедневно с 08:30-21:00</div>
+                                        <div class="about__link-item--email">
+                                            <div class="email-txt">Email:</div>
+                                            <a class="email-link" href="#">info@wezom.com.ua</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-up">
+                            <span class="scroll-up__txt ">Вверх</span>
+                            <button class="scroll-up__button circle">
+                                <svg class="arr-up" width="12" height="12">
+                                    <use xlink:href="dist/icons.svg#arr-up"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="block-info__website">
+                        <div class="block-info__website-payment">
+                            <div class="payment">
+                                <div class="payment__item">
+                                    <img src="img/payment/portmone.svg" alt="">
+                                </div>
+                                <div class="payment__item">
+                                    <img src="img/payment/mastercard.svg" alt="">
+                                </div>
+                                <div class="payment__item">
+                                    <img src="img/payment/visa.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-info__website-corp">
+                            <div class="corp__text">Разработано в</div>
+                            <a href="https://wezom.com.ua/" target="_blank" class="corp__name">WEZOM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="dist/js/main.bundle.js"></script>
+
+</body>
+</html>

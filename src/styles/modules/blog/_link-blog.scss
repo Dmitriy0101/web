@@ -1,0 +1,24 @@
+.link-blog {
+  &__button {
+    padding: 6px 21px 6px 21px;
+    border: 1px solid #E77E42;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 116%;
+    text-align: center;
+    color: #E77E42;
+  }
+
+  &:hover .link-blog__button {
+    border: 1px solid #202454;
+  }
+
+  &:hover .link-blog__text {
+    color: #202454;
+  }
+}
